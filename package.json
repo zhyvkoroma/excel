@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
-    "css-loader": "^4.0.0"
+    "css-loader": "^4.0.0",
+    "normalize.css": "^8.0.1"
   }
 }
