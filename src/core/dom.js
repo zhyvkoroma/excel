@@ -12,12 +12,6 @@ class Dom {
         }
         return this.$el.outerHTML.trim();
     }
-
-    clear() {
-        this.html('');
-        return this;
-    }
-
     append(node) {
         if (node instanceof Dom) {
             node = node.$el;
@@ -32,6 +26,10 @@ class Dom {
 
     on(eventType, callback) {
         this.$el.addEventListener(eventType, callback);
+    }
+
+    off(eventType, callback) {
+        this.$el.removeEventListener(eventType, callback);
     }
 }
 
